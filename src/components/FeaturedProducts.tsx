@@ -33,7 +33,7 @@ const products: Product[] = [
 
 function FeaturedProducts() {
   return (
-    <section className="grid grid-cols-4 gap-6 px-6 py-12">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-12">
       {products.map((product) => (
         <ProductCard key={product.name} product={product} />
       ))}
